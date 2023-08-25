@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menú de Platos Principales y Acompañamientos</title>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Menú Bottega:</h1>
+        <div id="menu">
+            <H2>Breckfast</H2>
+            <ul>
+                <li>Desayuno 1<span>......3 euros</span></li>
+                <li>Desayuno 2<span>......4 euros</span></li>
+                <li>Desayuno 3<span>......5 euros</span></li>
+            </ul>
+            <label for="breckfast">Seleccione su desayuno:</label>
+            <select id="breckfast">
+                <option value="opcion1" precio="3">Desayuno 1</option>
+                <option value="opcion2" precio="4">Desayuno 2</option>
+                <option value="opcion3" precio="5">Desayuno 3</option>
+            </select>
+            
+            <button onclick="calcularPrecioDesayuno()">Calcular Precio</button>
+            <p id="precioBreckfast"></p>
+
+            <H2>Lunch y Diner</H2>
+            <p>(Diner-suplemento de 10€/pax)</p>
+            <h3>Platos principales</h3>
+            <ul>
+                <li>Plato 1<span>......10 euros</span></li>
+                <li>Plato 2<span>......12 euros</span></li>
+                <li>Plato 3<span>......15 euros</span></li>
+            </ul>
+            <h3>Complementos</h3>
+            <ul>
+                <li>Complemento 1<span>......3 euros</span></li>
+                <li>Complemento 2<span>......4 euros</span></li>
+                <li>Complemento 3<span>......5 euros</span></li>
+                <li>Complemento 4<span>......4 euros</span></li>
+            </ul>
+        </div>
+
+        <label for="opcion">Selecciona Lunch o Diner</label>
+        <select id="opcion">
+            <option value="option1" precio="0">Lunch</option>
+            <option value="opcion2" precio="10">Diner</option>
+        </select>
+        
+        <label for="plato">Selecciona su Plato: Principal</label>
+        <select id="plato">
+            <option value="opcion1" precio="10">Plato 1</option>
+            <option value="opcion2" precio="12">Plato 2</option>
+            <option value="opcion3" precio="15">Plato 3</option>
+        </select>
+
+        <label for="platos">Seleccione un Acompañamiento:</label>
+        <select id="platos" name="platos">
+            <option value="opcion1" precio="3">Complemento 1</option>
+            <option value="opcion2" precio="4">Complemento 2</option>
+            <option value="opcion3" precio="5">Complemento 3</option>
+            <option value="opcion4" precio="4">Complemento 4</option>
+        </select>
+
+        <label for="complemento">Seleccione un segundo Acompañamiento:</label>
+        <select id="complemento" name="platos">
+            <option value="opcion1" precio="3">Complemento 1</option>
+            <option value="opcion2" precio="4">Complemento 2</option>
+            <option value="opcion3" precio="5">Complemento 3</option>
+            <option value="opcion4" precio="4">Complemento 4</option>
+        </select>
+        
+        <button onclick="calcularPrecio()">Calcular Precio</button>
+
+        <p id="precioTotal"></p>
+        <p id="comentarioAleatorio"></p>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+    body {
+        background-color: rgb(216, 196, 171); 
+    }
+   
+    h1 {
+      text-align: center;
+      color: rgb(61, 66, 70);
+    }
+
+    .plato h2 {
+        color: rgb(39, 10, 10);
+      }
+  
+    .plato p {
+        color: rgb(212, 158, 158);
+    }
+
+    label {
+        color: rgb(83, 16, 16);
+      }
+
+    #precioTotal, #precioBreckfast {
+      background-color: rgb(233, 240, 238);
+    }
+    
